@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Passion+One:wght@400;700;900&family=Righteous&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Bebas+Neue&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Passion+One:wght@400;700;900&family=Righteous&family=Sriracha&display=swap');
 
+:root{
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:"Passion One", sans-serif;
+    --fonte3: "Sriracha", sans-serif;
+}
 
 *{
     margin: 0%;
@@ -8,6 +14,7 @@
 html, body{
     min-height: 100%;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -18,6 +25,8 @@ header{
  header > h1{
     padding-top: 50px;
     font-variant:small-caps ;
+    font-family:var(--fonte2) ;
+    font-size: 8vw;
  }
 
  header > p{
@@ -29,6 +38,8 @@ header{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
  }
 
  section.normal{
@@ -42,10 +53,9 @@ header{
  }
 
  section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(22, 22, 22, 0.486);
-    
-
  }
 
  a{
