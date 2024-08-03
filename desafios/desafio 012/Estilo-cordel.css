@@ -42,6 +42,26 @@ header{
     font-size: 3.5vw;
  }
 
+ section#img001{
+    background-image: url(imagens/background001.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+
+ section#img002{
+    background-image: url(imagens/background002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+
+ section > p{
+    padding-bottom: 2em;
+ }
+
  section.normal{
     background-color: white;
     color: black;
@@ -50,12 +70,14 @@ header{
  section.imagem{
     background-color: rgb(39, 39, 39);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
  }
 
  section.imagem > p {
     display: inline-block;
     padding: 5px;
     background-color: rgba(22, 22, 22, 0.486);
+    text-shadow: 1px 1px 0px black;
  }
 
  a{
