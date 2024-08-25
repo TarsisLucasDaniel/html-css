@@ -7,15 +7,15 @@ table{
     border-collapse: collapse;
 }
 
-tr.linha{
-    background-color: grey;
-}
-
 td{
     border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align:middle ;
 }
 
-td.dado{
-    background-color: yellow;
+.numero{
+    text-align: right;
 }
+
 
