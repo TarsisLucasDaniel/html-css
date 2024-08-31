@@ -41,6 +41,14 @@
             text-align: center;
         }
 
+        caption{
+           font-size: 1.5em;
+           font-weight: bold;
+           padding: 10px;
+           background-color: lightgray;
+        }
+        
+
     </style>
 </head>
 <body>
@@ -48,12 +56,14 @@
 
     <table>
 
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Posição</th>
-                <th>Estado</th>
-                <th>População</th>
-                <th>% da População</th>
+                <th scope="col">Posição</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+                <th scope="col">% da População</th>
             </tr>
 
         </thead>
@@ -254,10 +264,9 @@
 
         <tfoot>
            <tr>
-            <th>Total de Habitantes</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="numero"><strong>212 583 720</strong></td>
            </tr>
-
         </tfoot>
 
 
