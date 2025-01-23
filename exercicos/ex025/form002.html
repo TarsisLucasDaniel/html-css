@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário Dois</title>
+    <style>
+        
+        body{
+            background-color: black;
+        }
+
+        h1{
+            text-align: center;
+            color: black;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        form{
+            text-align: center;
+        }
+
+        p{
+            border: 1px solid rgb(238, 255, 1);
+            padding: 10px;
+            margin: auto;
+            width: 500px;
+            background-color: rgb(68, 68, 68);
+        }
+
+        label{
+            color: white;
+            padding: 10px;
+        }
+
+    </style>
 </head>
 <body>
 
     <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="iusu">Usuário</label>
+            <label for="iusu">Usuário:</label>
             <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="Maria de..">
         </p>
 
