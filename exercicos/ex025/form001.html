@@ -3,30 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário 1</title>
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
+            margin:0px;
         }
 
         h1{
+            letter-spacing: 2px;
+            color: white;
+            text-shadow:1px 1px 0px rgb(0, 0, 0);
             text-align: center;
         }
 
+        body{
+            background-color: gray;
+        }
+
+        fieldset{
+           border: none;
+        }
+
+        fieldset#um{
+            margin-bottom: 15px;
+        }
+
+        fieldset#dois{
+            margin-bottom: 15px;
+        }
+
+        fieldset#três{
+            margin-bottom: 15px;
+        }
+        
+        header{
+            background-image:linear-gradient(to bottom,rgb(14, 14, 14), rgb(59, 59, 59),  rgb(109, 109, 109), #808080);
+            padding:10px;
+            text-align:center;
+            padding-bottom: 50px;
+            padding-top:20px;
+        }
+
+        label{
+            font-family:cursive;
+        }
+        
         legend{
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: black;
             font-size: 2em;
-            text-shadow: 1px 1px 0px black;
+            text-shadow: 1px 1px 0px rgb(255, 255, 255);
+        }
+
+        aside{
+            background-color: black;
+            width: 100%;
         }
 
     </style>
 </head>
 <body>
-    <h1>Meu Primeiro Formulário</h1>
+    <header>
+        <h1>Meu Primeiro Formulário</h1>
+    </header>
     <form action="cadastro.php" autocomplete="off" method="post">
 
-        <fieldset>
+        <aside>.</aside>
+
+        <fieldset id="um">
             <legend>Informações Pessoais</legend>
             <p>
                 <label for="inome">Nome:</label>
@@ -41,19 +86,57 @@
             </p>
         </fieldset>
 
-        <fieldset>
+        <aside>.</aside>
+
+        <fieldset id="dois">
             <legend>Informações Escolares</legend>
 
             <p>
                 <label for="iserie">Série:</label>
                 <input type="text" name="serie" id="iserie" required maxlength="7" minlength="1" autocomplete="username">
             </p>
-
             <p>
                 <label for="iano">Ano:</label>
                 <input type="month" name="ano" id="iano" required maxlength="4" minlength="2">
             </p>
+
+            <p><input type="submit" value="Enviar"></p>
+            <p><input type="reset" value="Limpar"></p>
         </fieldset>
+
+        <aside>.</aside>
+
+        <fieldset id="três">
+            <legend>Informações de Cadastro</legend>
+            <p>
+                <label for="iusu">Usuário:</label>
+                <input type="text" name="usu" id="iusu" maxlength="20" minlength="5" required autocomplete="username">
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" required maxlength="15" minlength="4" autocomplete="password">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="" id="" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required max="11"
+                min="11" autocomplete="tel">
+            </p>
+            
+            
+
+
+
+
+            
+            <p><input type="submit" value="Enviar"></p>
+            <p><input type="reset" value="Limpar"></p>
+        </fieldset>
+
+        <aside>.</aside>
         
     </form>
 </body>
