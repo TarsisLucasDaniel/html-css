@@ -8,23 +8,52 @@
         *{
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        h1{
+            text-align: center;
+        }
+
+        legend{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            font-size: 2em;
+            text-shadow: 1px 1px 0px black;
+        }
+
     </style>
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
     <form action="cadastro.php" autocomplete="off" method="post">
 
-        <p> 
-            <label for="inome">Nome:</label> 
-            <input type="text" name="nome" id="inome">
-         </p>
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome">
+             </p>
+            <p>
+                <label for="isobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="isobrenome">
 
-        <p> 
-            <label for="isobrenome">Sobrenome</label> 
-            <input type="text" name="sobrenome" id="isobrenome">
-        </p>
+                <p><input type="submit" value="Enviar"></p>
+                <p><input type="reset" value="Limpar"></p>
+            </p>
+        </fieldset>
 
-        <p><input type="submit" value="Enviar"></p>
+        <fieldset>
+            <legend>Informações Escolares</legend>
+
+            <p>
+                <label for="iserie">Série:</label>
+                <input type="text" name="serie" id="iserie" required maxlength="7" minlength="1" autocomplete="username">
+            </p>
+
+            <p>
+                <label for="iano">Ano:</label>
+                <input type="month" name="ano" id="iano" required maxlength="4" minlength="2">
+            </p>
+        </fieldset>
         
     </form>
 </body>
