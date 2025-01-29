@@ -47,6 +47,7 @@
 
         label{
             font-family:cursive;
+            color: #0817FF;
         }
         
         legend{
@@ -54,6 +55,7 @@
             color: black;
             font-size: 2em;
             text-shadow: 1px 1px 0px rgb(255, 255, 255);
+            padding-top: 10px;
         }
 
         aside{
@@ -61,11 +63,18 @@
             width: 100%;
         }
 
+        div{
+            width: 500px;
+            margin:auto;
+            background-color:black;
+
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Meu Primeiro Formulário</h1>
+        <h1>Formulário Pessoal</h1>
     </header>
     <form action="cadastro.php" autocomplete="off" method="post">
 
@@ -80,10 +89,59 @@
             <p>
                 <label for="isobrenome">Sobrenome</label>
                 <input type="text" name="sobrenome" id="isobrenome">
-
-                <p><input type="submit" value="Enviar"></p>
-                <p><input type="reset" value="Limpar"></p>
             </p>
+            <p>
+                <label for="iest">Estado:</label>
+                <select name="estado" id="iest">
+
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">MInas Gerais</option>
+                        <option value="ES">Espiríto Santo</option>
+                    </optgroup>
+
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="BA">Bahia</option>
+                        <option value="PI">Piauí</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernâmbuco</option>
+                        <option value="CE">Ceará</option>
+                        <option value="AL">Alagoas</option>
+                    </optgroup>
+
+                    <optgroup label="Centro-Oeste">
+                        <option value="Go">Goiás</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato grosso Do Sul</option>
+                    </optgroup>
+
+                    <optgroup label="Região Norte">
+                        <option value="AM">Amazonas</option>
+                        <option value="AC">Acre</option>
+                        <option value="PA">Pará</option>
+                        <option value="RR">Roraima</option>
+                        <option value="AP">Macapá</option>
+                    </optgroup>
+                    
+                    <optgroup label="Região Sul">
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande Do Sul</option>
+                        <option value="PR">Paraná</option>
+                    </optgroup>
+                    
+                </select>
+            </p>
+            <p>
+                <label for="">Sexo:</label>
+                <input type="radio" name="sexo" id="isexmasc"> <label for="isexmasc">Masculino</label>
+                <input type="radio" name="sexo" id="isexfem"> <label for="isexfem">Feminino</label>
+            </p>
+
+            <p><input type="submit" value="Enviar"></p>
+            <p><input type="reset" value="Limpar"></p>
+
         </fieldset>
 
         <aside>.</aside>
@@ -126,18 +184,22 @@
                 min="11" autocomplete="tel">
             </p>
             
-            
-
-
-
-
-            
             <p><input type="submit" value="Enviar"></p>
             <p><input type="reset" value="Limpar"></p>
         </fieldset>
 
         <aside>.</aside>
+
+        <div>
+            <p>
+                
+            </p>
+
+
+        </div>
         
     </form>
+
+
 </body>
 </html>
