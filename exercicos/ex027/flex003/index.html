@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container-1{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.container-2{
+            background-color: gray;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        div.container-3{
+            background-color: gray;
+            display: flex;
+            flex-flow: row-reverse wrap;
+        }
+
+        div.container-4{
+            background-color: gray;
+            display: flex;
+            flex-flow: row-reverse wrap-reverse;
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center
+            ;
+            flex: auto;
+        }
+
+        h1{
+            font-weight: bold;
+            font-size: 1.5em;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Configuração Padrão</h1>
+    <div class="container-1">
+        
+        <div class="item">Exemplo de Bloco A</div>
+        <div class="item">Exemplo de Bloco B</div>
+        <div class="item">Exemplo de Bloco C</div>
+        <div class="item">Exemplo de Bloco D</div>
+        <div class="item">Exemplo de Bloco E</div>
+        <div class="item">Exemplo de Bloco F</div>
+        <div class="item">Exemplo de Bloco G</div>
+    </div>
+
+    <h1>Configuração Quebra de Linha</h1>
+    
+    <div class="container-2">
+        
+        <div class="item">Exemplo de Bloco A</div>
+        <div class="item">Exemplo de Bloco B</div>
+        <div class="item">Exemplo de Bloco C</div>
+        <div class="item">Exemplo de Bloco D</div>
+        <div class="item">Exemplo de Bloco E</div>
+        <div class="item">Exemplo de Bloco F</div>
+        <div class="item">Exemplo de Bloco G</div>
+    </div>
+
+    <h1>Configuração Linha Reversa com Quebra de Linha</h1>
+
+    <div class="container-3">
+        <div class="item">Exemplo de Bloco A</div>
+        <div class="item">Exemplo de Bloco B</div>
+        <div class="item">Exemplo de Bloco C</div>
+        <div class="item">Exemplo de Bloco D</div>
+        <div class="item">Exemplo de Bloco E</div>
+        <div class="item">Exemplo de Bloco F</div>
+        <div class="item">Exemplo de Bloco G</div>
+    </div>
+
+    <h1>Configuração de Linha inversa Com Quebra de Linha Inversa</h1>
+
+    <div class="container-4">
+        <div class="item">Exemplo de Bloco A</div>
+        <div class="item">Exemplo de Bloco B</div>
+        <div class="item">Exemplo de Bloco C</div>
+        <div class="item">Exemplo de Bloco D</div>
+        <div class="item">Exemplo de Bloco E</div>
+        <div class="item">Exemplo de Bloco F</div>
+        <div class="item">Exemplo de Bloco G</div>
+    </div>
+
+
+
+
+</body>
+</html>
