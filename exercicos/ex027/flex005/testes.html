@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes Flex-Box, Centralizando Item</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+
+        div.container{
+             background-color: rgb(255, 255, 255);
+             display: flex;
+             flex-flow: row nowrap;
+             justify-content: center;
+             align-items: center;
+             width: 100vw;
+             height: 100vh;
+        }
+
+        div.item{
+            background-color:rgb(18, 15, 185) ;
+            border-radius: 5px;
+            border: 5px solid black;
+            width: 550px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        div.item > h1{
+            color: rgb(255, 255, 255);
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2.5em;
+            text-align: center;
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);
+            margin-bottom: 15px;
+        }
+
+        form{
+            border-radius: 5px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        input{
+            padding: 0.75rem;
+            border-radius: 5px;
+            border: 1px solid black;
+            width: 90%;
+        }
+
+        label{
+            font-size: 1.2em;
+            color: white;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width:481px) and (max-width:768px){
+            div.item{
+                width: 400px;
+                height: 400px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="fundo">
+        <div class="container">
+            <div class="item">
+                <h1>Formulário</h1>
+
+                <form action="cadastro.php" method="get" autocomplete="on">
+
+                    <p>
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" placeholder="João da ...." required>
+                    </p>
+
+                    <p>
+                        <label for="iemail">Email:</label>
+                        <input type="email" name="email" id="iemail" placeholder="João@gamil.com" required>
+                    </p>
+
+                    <p>
+                        <label for="isenha">Senha:</label>
+                        <input type="password" name="senha" id="isenha" placeholder="1234..." required>
+                    </p>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
