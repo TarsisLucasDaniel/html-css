@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+
+        div.container{
+            background-color: blue;
+            height: 100vh;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div.item{
+            background-color: black;
+            color: white;
+            padding: 15px;
+
+        }
+
+        div#i1{
+            order: 0;
+        }
+
+        div#i2{
+            align-self: auto;
+            color: white;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+            background-color: red;
+            padding: 20px;
+        }
+
+        div#i3{
+            order: -3;
+           
+        }
+
+        div#i4{
+            order: 4;
+            align-self: flex-start;
+        }
+
+        div#i5{
+            order: 5;
+            align-self: flex-end;
+        }
+
+        div#i7{
+            order: -4;
+            align-self: flex-start;
+        }
+
+        div#i8{
+            order:-5;
+            align-self: fleX-end;
+        }
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container" id="i1">
+        <div class="item">
+            AMOR
+
+        </div>
+
+        <div class="item" id="i2">
+            JESUS
+        </div>
+
+        <div class="item" id="i3">
+            FELICIDADE
+
+        </div>
+
+        <div class="item" id="i4">
+            ESPERANÇA
+
+        </div>
+
+        <div class="item" id="i5">
+            PERDÃO
+
+        </div>
+
+        <div class="item" id="i6">
+            GRAÇA
+        </div>
+
+        <div class="item" id="i7">
+            FÉ
+        </div>
+
+        <div class="item" id="i8">
+            HUMILDADE
+        </div>
+
+        <div class="item" id="i9">
+            FORÇA
+        </div>
+    </div>
+    
+</body>
+</html>
