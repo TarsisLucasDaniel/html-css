@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes Flex-Basis / Align-Self </title>
+    <style>
+
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+
+        div.container{
+            background-color: gray;
+            height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+
+        div.itens{
+            background-color: black;
+            padding: 10px;
+            border: 1px solid white;
+            color: white;
+            align-self: center;
+            flex-basis: 300px;
+        }
+
+        div#item-1{
+            background-image: linear-gradient(to left, black, white);
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 1px black;
+            font-weight: bold;
+            align-self: auto;
+        }
+
+        div#item-2{
+            background-image: linear-gradient(to left,  #A52851, #0857A2, #DFB60D, white );
+            color: black;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px white;
+            align-self: center;
+        }
+
+        div#item-3{
+            background-image:linear-gradient( to left, #001E9D, black, white);
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);
+            align-self: center;
+        }
+
+        div#item-4{
+            background-image: linear-gradient(to left, #003F71, white, #E4010B);
+            color: black;
+            text-shadow: 1px 1px 1px white;
+            font-weight: bold;
+            align-self: flex-end;
+            
+        }
+
+        div#item-5{
+            background-image: linear-gradient(to left, #DC0001, #9D8349, #003175, white);
+            color: black;
+            text-shadow: 1px 1px 1px white;
+            font-weight: bold;
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="itens" id="item-1">
+            O Real Madrid Têm 15 Champios Legues
+        </div>
+
+        <div class="itens" id="item-2">
+            Barcelona Têm 5 Champios Legues 
+
+        </div>
+
+        <div class="itens" id="item-3">
+            Inter Têm 2 Champios legues
+
+        </div>
+
+        <div class="itens" id="item-4">
+            PSG Apenas Uma
+
+        </div>
+
+        <div class="itens" id="item-5">
+            Arsenal 0 
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>
