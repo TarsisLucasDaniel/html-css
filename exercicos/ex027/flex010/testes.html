@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testes Flex-shrink / Flex- grow</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        div.container{
+            display: flex;
+            flex-flow: row nowrap;
+            padding: 10px;
+            background-color: rgb(30, 255, 0);
+             
+        }
+
+        div.item{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(255, 255, 255);
+            padding: 20px;
+            flex-basis: 200px;
+            align-items: ;
+
+        }
+
+        h1.titulos{
+            margin: 10px;
+            color: black;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1 class="titulos">Flex-Shrink: 0; / Flex-Grow:0;</h1>
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+    
+</body>
+</html>
