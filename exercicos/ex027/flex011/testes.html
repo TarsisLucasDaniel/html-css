@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diferentes Valores Grow/Basis/Shrink</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        h1{
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 2em;
+            font-family: cursive;
+            margin-bottom: 10px;
+        }
+
+        main#primeiro{
+            background-color: black;
+            padding: 50px;
+            margin: auto;
+        }
+
+        div.container-1{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: center;
+            background-color: gray;
+            padding: 5px;
+        }
+
+        div.items-1{
+            flex-basis: 150px;
+            padding: 5px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        div#item-A-1{
+            order: 2;
+            flex-grow:1 ;
+            flex-shrink: 1;
+            align-self: flex-end;
+        }
+
+        div#item-B-1{
+            order: 3;
+            align-self: flex-end;
+            flex-grow:0 ;   
+            flex-shrink: 10;
+        }
+
+        div#item-C-1{
+            order: 1;
+            flex-grow: 2;
+            flex-shrink: 1;
+        }
+
+        main#segundo{
+            background-color: red;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        main#segundo > div.container-2{
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: row nowrap;
+            padding: 10px;
+        }
+
+        div.container-2 > div.items-2{
+            flex-basis: 200px;
+            padding: 10px;
+            background-color: blue;
+            border: 1px solid white;
+
+        }
+
+        div.container-2 > div#item-A-2{
+            flex-grow:0 ;
+            flex-shrink: 4;
+            order: 3;
+            align-self: flex-end;
+        }
+
+        div.container-2 > div#item-B-2{
+            flex-grow: 1;
+            flex-shrink: 2;
+            order: 1;
+            align-self: flex-end;
+        }
+
+        div.container-2 > div#item-C-2{
+            flex-grow: 4;
+            flex-shrink: 1;
+            order: 2;
+            align-self: flex-start;
+        }
+
+        main#terceiro{
+            background-color: rgb(0, 253, 0);
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        main#terceiro > div.container-3{
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            background-color: brown;
+            padding: 5px;
+        }
+
+        div.container-3 > div.items-3{
+            background-color: rgba(0, 255, 234, 0.473);
+            border: 1px solid white;
+            padding: 5px;
+            flex-basis: 170px
+            
+        }
+
+        div.container-3 > div#item-A-3{
+            flex-grow: 2;
+            flex-shrink: 2;
+            order:2 ;
+
+        }
+
+        div.container-3 > div#item-B-3{
+            flex-grow:4 ;
+            flex-shrink:1 ;
+            order: 3;
+        }
+
+        div.container-3 > div#item-C-3{
+            flex-grow:0 ;
+            flex-shrink: 1;
+            order: 1;
+        }
+
+        
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+
+    <main id="primeiro">
+        <h1>CONTAINER 1</h1>
+        <div class="container-1">
+
+            <div class="items-1" id="item-A-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa corporis in magnam esse blanditiis optio cumque eum quia, vitae ipsum error porro temporibus accusantium molestiae possimus obcaecati, voluptate nemo hic.</p>
+            </div>
+            <div class="items-1" id="item-B-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="items-1" id="item-C-1">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque corporis enim veritatis et, reiciendis fuga quo odit cupiditate sequi porro illum nulla blanditiis at molestias accusantium debitis, nesciunt, animi quia! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque corporis enim veritatis et, reiciendis fuga quo odit cupiditate sequi porro illum nulla blanditiis at molestias accusantium debitis, nesciunt, animi quia!</p>
+            </div>
+        </div>
+    </main>
+
+    <main id="segundo">
+
+        <h1>CONTAINER 2</h1>
+
+        <div class="container-2">
+
+            <div class="items-2" id="item-A-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque vitae magnam, sapiente iusto esse nobis voluptates, voluptatibus aperiam eveniet dolorum similique maxime architecto est dolore optio suscipit. Facilis, modi cumque</div>
+
+            <div class="items-2" id="item-B-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum quaerat ducimus earum, unde, eveniet, ipsum obcaecati minima hic soluta nesciunt reprehenderit distinctio inventore perferendis rerum ad? Velit voluptate assumenda veniam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eos suscipit ut pariatur accusantium libero corporis voluptas architecto vel eum. Rem in quaerat saepe sit illo omnis eius possimus inventore.</div>
+
+            <div class="items-2" id="item-C-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque vitae magnam, sapiente iusto esse nobis voluptates, voluptatibus aperiam eveniet dolorum similique maxime architecto est dolore optio suscipit. Facilis, modi cumque Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque vitae magnam, sapiente iusto esse nobis voluptates, voluptatibus aperiam eveniet dolorum similique maxime architecto est dolore optio suscipit. Facilis, modi cumque Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque vitae magnam, sapiente iusto esse nobis voluptates, voluptatibus aperiam eveniet dolorum similique maxime architecto est dolore optio suscipit. Facilis, modi cumque</div>
+
+        </div>
+
+    </main>
+
+
+    <main id="terceiro">
+
+        <h1>CONTAINER 3</h1>
+
+        <div class="container-3">
+
+            <div class="items-3" id="item-A-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit obcaecati culpa accusamus dicta eaque veniam doloremque, nulla odit aperiam non officiis eligendi fugit natus commodi? Animi dicta voluptatibus incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit obcaecati culpa accusamus dicta eaque veniam doloremque, nulla odit aperiam non officiis eligendi fugit natus commodi? Animi dicta voluptatibus incidunt.
+
+            </div>
+
+            <div class="items-3" id="item-B-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit obcaecati culpa accusamus dicta eaque veniam doloremque, nulla odit aperiam non officiis eligendi fugit natus commodi? Animi dicta voluptatibus incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit obcaecati culpa accusamus dicta eaque veniam doloremque, nulla odit aperiam non officiis eligendi fugit natus commodi? Animi dicta voluptatibus incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit obcaecati culpa accusamus dicta eaque veniam doloremque, nulla odit aperiam non officiis eligendi fugit natus commodi? Animi dicta voluptatibus incidunt.
+
+            </div>
+
+            <div class="items-3" id="item-C-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sit obcaecati culpa accusamus dicta eaque veniam doloremque, nulla odit aperiam non officiis eligendi fugit natus commodi? Animi dicta voluptatibus incidunt.
+ 
+            </div>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>

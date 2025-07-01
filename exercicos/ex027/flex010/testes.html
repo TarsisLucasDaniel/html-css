@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testes Flex-shrink / Flex- grow</title>
+    <title>Testes Flex-Shrink / Flex- Grow</title>
     <style>
         *{
             padding: 0px;
             margin: 0px;
+        }
+
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(240, 192, 192);
         }
 
         div.container{
@@ -15,28 +20,44 @@
             flex-flow: row nowrap;
             padding: 10px;
             background-color: rgb(30, 255, 0);
-             
-        }
-
-        div.item{
-            background-color: rgb(0, 0, 0);
-            color: rgb(255, 255, 255);
-            border: 1px solid rgb(255, 255, 255);
-            padding: 20px;
-            flex-basis: 200px;
-            align-items: ;
-
+            margin: 20px; 
         }
 
         h1.titulos{
-            margin: 10px;
+            margin: 20px;
             color: black;
             text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
         }
 
+        div.flex-shink-0{
+            flex-shrink: 0;
+            flex-grow: 0;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            flex-basis: 250px;
+        }
+
+        div.flex-shrink-1{
+            flex-shrink: 1;
+            flex-grow: 0;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            flex-basis: 250px;
+        }
+
+        div.flex-grow-1{
+            flex-shrink: 0;
+            flex-grow: 1;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(255, 255, 255);
+            padding: 10px;
+            flex-basis: 250px;
+        }
 
     </style>
 </head>
@@ -45,9 +66,26 @@
     <h1 class="titulos">Flex-Shrink: 0; / Flex-Grow:0;</h1>
 
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="flex-shink-0">A</div>
+        <div class="flex-shink-0">B</div>
+        <div class="flex-shink-0">C</div>
+    </div>
+
+    <h1 class="titulos">Flex-Shrink:1; / Flex-Grow:0; </h1>
+
+    <div class="container">
+        <div class="flex-shrink-1">A</div>
+        <div class="flex-shrink-1">B</div>
+        <div class="flex-shrink-1">C</div>
+    </div>
+
+    <h1 class="titulos">Flex-Shrink:0; / Flex-Grow:1;</h1>
+
+    <div class="container">
+        <div class="flex-grow-1">A</div>
+        <div class="flex-grow-1">B</div>
+        <div class="flex-grow-1">C</div>
+
     </div>
     
 </body>

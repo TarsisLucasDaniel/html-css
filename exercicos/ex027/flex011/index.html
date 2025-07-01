@@ -16,12 +16,23 @@
             border: 1px solid black;
             text-align: center
             ;
-            flex-basis: 250px;
-            flex-shrink: 1;
-            flex-grow: 1;
+            flex-basis: 200px;
+        }
 
-            
-           
+        div#item-A{
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div#item-B{
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        div#item-C{
+            flex-grow: 4;
+            flex-shrink: 2;
+
         }
 
     </style>
@@ -29,9 +40,9 @@
 <body>
     <div class="container">
         
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
+        <div class="item" id="item-A">A</div>
+        <div class="item" id="item-B">B</div>
+        <div class="item" id="item-C">C</div>
 
     </div>
 </body>
