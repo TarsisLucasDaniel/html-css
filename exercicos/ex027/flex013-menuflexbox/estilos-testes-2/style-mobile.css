@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --cor1:#AAF277;
+    --cor2:#4CBF2C;
+    --cor3:#2E8C14;
+    --co03:#135908;
+    --cor4:#054902;
+}
+
+body{
+    background-color: white;
+    background: url(../imagens/gettyimages-1178169452-640x640.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background-image: linear-gradient(to bottom,#AAF277, #4CBF2C, #2E8C14, #135908, #054902 );
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1#hi-item-desktop{
+    display: none;
+}
+
+header > p#p-item-desktop{
+    display: none;
+}
+
+header > h1{
+    color: #ffffff;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.979);
+    font-size: 2.4em;
+    letter-spacing: 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 15px;
+}
+
+header > h1 > #link-titulo{
+    text-decoration: none;
+    color: white;
+    transition: 0.6s ease;
+    text-align: center;
+}
+
+header > h1 > #link-titulo:hover{
+    color: rgb(255, 224, 224);
+    text-shadow: 1px 2px 2px rgb(0, 0, 0) ;
+}
+
+nav > div.links-social-medias > a > .icons-media{
+    border-radius: 50%;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.623);
+    transition: 0.5s ease;
+}
+
+nav > div.links-social-medias > a > .icons-media:hover{
+    transform: translate(-4px, -4px);
+    border: 3px solid rgb(43, 255, 0);
+    box-shadow: 6px 6px 15px black;
+}
+
+nav > div.links-social-medias > a{
+    margin: 7px;
+    text-decoration: none;
+}
+
+nav > div.links-options{
+    display: none;
+}
+
+div.container-nav-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #054902;
+    padding: 5px;
+}
+
+div.container-nav-2 > a{
+    text-decoration: none;
+    margin-top: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.829);
+    border: 0.1px solid #88df5c;
+    border-radius: 20px;
+    padding: 7px;
+    transition: 0.2s ease-in;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.26);
+}
+
+div.container-nav-2 > a:hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.671);
+    background-color: #73D44B;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 0px rgb(255, 255, 255);
+
+}
+
+
+
+
+

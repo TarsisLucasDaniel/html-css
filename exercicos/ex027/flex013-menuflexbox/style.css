@@ -19,8 +19,6 @@ header{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-
-
     background-color: gray;
     color: white;
     padding: 10px;
