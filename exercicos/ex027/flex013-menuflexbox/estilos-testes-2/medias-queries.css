@@ -55,18 +55,66 @@
 
      nav > div.links-options > a:hover{
         color: #00E656;
-        
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.562);
         border-radius: 10px;
         background-color: #04681A;
-
-
      }
-
-
-            
      nav > div.links-options{
         display: block;
+    }
+
+    section.flex-content{
+        background-color: #064A02;
+        padding: 20px;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    section.flex-content > article.text-media{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    section.flex-content > article.media-text{
+        display: flex;
+        flex-flow: row wrap-reverse;
+        justify-content: space-between;
+    }
+    section.flex-content > article > div.text{
+        flex: 1 1 500px;
+    }
+
+    section.flex-content > article > div.media{
+        flex: 1 1 500px;
+    }
+
+    div.media > img{
+        display: block;
+        margin: auto;
+        padding: 10px;
+    }
+
+    div.text > p{
+        margin-bottom: 10px;
+        text-align: justify;
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(0, 255, 0, 0.39);
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 1.5em;
+    }
+
+    div.text > h1{
+        color: rgb(255, 255, 255);
+        line-height: 1.2em;
+        margin-bottom: 15px;
+        margin-left:15px;
+        font-size: 3em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-shadow: 1px 1px 1px black;
+        text-align: left;
     }
 
 }

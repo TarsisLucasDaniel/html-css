@@ -42,7 +42,6 @@ section.flex-content > article.media-text{
     display: flex;
     flex-flow: row wrap-reverse;
     justify-content: space-between;
-
 }
 
 section.flex-content > article.text-media{
