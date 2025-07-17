@@ -41,7 +41,7 @@
         margin-top: 30px;
     }
 
-     nav > div.links-options > a{
+    nav > div.links-options > a{
         font-size: 1.3em;
         letter-spacing: 0px;
         padding: 5px;
@@ -65,9 +65,9 @@
 
     section.flex-content{
         background-color: #064A02;
-        padding: 20px;
         display: flex;
         flex-flow: column nowrap;
+        margin: auto;
     }
 
     section.flex-content > article.text-media{
@@ -86,31 +86,39 @@
     }
 
     section.flex-content > article > div.media{
-        flex: 1 1 500px;
+        flex-grow: 1;
+        flex-shrink: 1;
     }
 
     div.media > img{
         display: block;
         margin: auto;
         padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    #media-1{
+        margin-bottom: 20px;
     }
 
     div.text > p{
+        line-height: 2em;
         margin-bottom: 10px;
         text-align: justify;
-        color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px black;
         font-family: Arial, Helvetica, sans-serif;
         background-color: rgba(0, 255, 0, 0.39);
         border-radius: 5px;
         padding: 10px;
-        font-size: 1.5em;
+        font-size: 1.6em;
     }
 
     div.text > h1{
         color: rgb(255, 255, 255);
         line-height: 1.2em;
         margin-bottom: 15px;
-        margin-left:15px;
         font-size: 3em;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         text-shadow: 1px 1px 1px black;

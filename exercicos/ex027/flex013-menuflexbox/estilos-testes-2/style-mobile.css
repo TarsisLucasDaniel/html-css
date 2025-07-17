@@ -22,8 +22,6 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
 }
 
 header{
@@ -141,7 +139,12 @@ section.flex-content{
     }
 
     section.flex-content > article > div.media{
-        flex: 1 1 500px;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+
+    #media-1{
+        margin-bottom: 15px;
     }
 
     div.media > img{
@@ -159,7 +162,7 @@ section.flex-content{
         background-color: rgba(0, 255, 0, 0.39);
         border-radius: 5px;
         padding: 10px;
-        
+        line-height: 1.5em;
     }
 
     div.text > h1{
