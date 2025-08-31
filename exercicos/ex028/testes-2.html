@@ -87,6 +87,21 @@
             grid-auto-columns: 100px;
         }
 
+        div.container-5{
+            display: grid;
+            margin: auto;
+            max-width: 700px;
+            height: 600px;
+            padding: 10px ;
+            border: 3px solid black;
+            gap: 10px;
+            background-color: gray;
+            place-content: center right ;
+            place-items: center center ;
+            grid-template: repeat(3,100px) / repeat(3, auto);
+            grid-auto-columns: 100px;
+        }
+
     </style>
 </head>
 <body>
@@ -136,6 +151,20 @@
     <div class="fundo">
         <h1 class="titulos">Place-Content + Grid-Auto-Row + Grid-Auto-Column</h1>
         <div class="container-4">
+            <div class="items">.</div>
+            <div class="items">.</div>
+            <div class="items">.</div>
+            <div class="items">.</div>
+            <div class="items">.</div>
+            <div class="items">.</div>
+            <div class="items">.</div>
+            <div class="items">.</div>
+        </div>
+    </div>
+
+    <div class="fundo">
+        <h1 class="titulos">Place-Content + Place-Items + Grid-Template + Repeat()</h1>
+        <div class="container-5">
             <div class="items">.</div>
             <div class="items">.</div>
             <div class="items">.</div>
