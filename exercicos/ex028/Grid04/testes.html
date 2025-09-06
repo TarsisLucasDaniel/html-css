@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes Grids Áreas</title>
+    <style>
+
+        aside{
+            width: 100%;
+            background-color: black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1{
+            color: black;
+            font-size: 2em;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-weight: normal;
+        }
+
+        div.container{
+            display: grid ;
+            grid-template-rows: repeat(4, 100px);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        
+
+        div.caixa1{
+            background-color: #FE7760;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        div.caixa2{
+            background-color: #4AC7AF;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        div.caixa3{
+            background-color: #FFDB4B;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+
+        div.caixa4{
+            background-color: #FFA832;
+            grid-row-start: 4;
+            grid-row-end:5 ;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+
+        div.container-2{
+            display: grid;
+            grid-template-rows: repeat(5, 100px);
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        div.caixa5{
+            grid-row-start: 1;
+            grid-row-end:2 ;
+            grid-column-start:1 ;
+            grid-column-end: 5;
+            background-color: #FF665B;
+
+        }
+
+        div.caixa6{
+            background-color: #35CDAA;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start:1 ;
+            grid-column-end:2 ;
+        }
+
+        div.caixa7{
+            background-color: #FEE156;
+            grid-row-start:2 ;
+            grid-row-end: 5;
+            grid-column-start:2 ;
+            grid-column-end:4 ;
+        }
+
+        div.caixa8{
+            background-color: #1D4C67;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start:4 ;
+            grid-column-end:5 ;
+        }
+
+        div.caixa9{
+            background-color: #D8861F;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 1;
+            grid-column-end:5 ;
+        }
+
+        div.container-3{
+            display: grid;
+            grid-template-rows: repeat(4, 100px);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        div.caixa10{
+            background-color:#FF685E ;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start:1 ;
+            grid-column-end:5;
+
+        }
+
+        div.caixa11{
+            background-color: #35C9AA;
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+
+        div.caixa12{
+            background-color: #FFE257;
+            grid-row-start:2 ;
+            grid-row-end: 3;
+            grid-column-start:2 ;
+            grid-column-end: 5;
+        }
+
+        div.caixa13{
+            background-color: #F89F2D;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end:4 ;
+        }
+
+        div.caixa14{
+            background-color:#184967 ;
+            grid-row-start:3 ;
+            grid-row-end:5 ;
+            grid-column-start: 4;
+            grid-column-end:5 ;
+        }
+
+        div.container-4{
+            display: grid;
+            grid-template-rows: repeat(7, 100px);
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        div.caixa15{
+            background-color: #FF615F;
+            grid-row-start: 1;
+            grid-row-end:2 ;
+            grid-column-start:1 ;
+            grid-column-end:6 ;
+        }
+
+        div.caixa16{
+            background-color: #43BEAA;
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        div.caixa17{
+            background-color: #FFE358;
+            grid-row-start: 2;
+            grid-row-end:4 ;
+            grid-column-start: 3;
+            grid-column-end:6 ;
+        }
+
+        div.caixa18{
+            background-color:#F79B26 ;
+            grid-row-start: 4;
+            grid-row-end:7;
+            grid-column-start:1 ;
+            grid-column-end: 3;
+        }
+
+        div.caixa19{
+            background-color: #53A17E;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+
+        div.caixa20{
+            background-color: #1D4569;
+            grid-row-start: 4;
+            grid-row-end:6 ;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+
+        div.caixa21{
+            background-color: #FF625F;
+            grid-row-start: 4;
+            grid-row-end:6 ;
+            grid-column-start: 5;
+            grid-column-end: 6;
+        }
+
+        div.caixa22{
+            background-color: red;
+            grid-row-start: 7;
+            grid-row-end: 6;
+            grid-column-start: 3;
+            grid-column-end:6 ;
+        }
+
+        div.caixa23{
+            background-color: blue;
+            grid-row-start: 7;
+            grid-row-end: 8;
+            grid-column-start:1 ;
+            grid-column-end: 3;
+        }
+
+        div.caixa24{
+            background-color: violet;
+            grid-row-start:7 ;
+            grid-row-end: 8;
+            grid-column-start:3 ;
+            grid-column-end: 6;
+        }
+
+    </style>
+</head>
+<body>
+    <aside>.</aside>
+    <h1>Container Número Um : </h1>
+    <div class="container">
+        <div class="caixa1">Caixa 1</div>
+        <div class="caixa2">Caixa 2</div>
+        <div class="caixa3">Caixa 3</div>
+        <div class="caixa4">Caixa 4</div>
+    </div>
+
+    <aside>.</aside>
+
+    <h1>Container Número Dois :</h1>
+
+    <div class="container-2">
+        <div class="caixa5">Caixa 5</div>
+        <div class="caixa6">Caixa 6</div>
+        <div class="caixa7">Caixa 7</div>
+        <div class="caixa8">Caixa 8</div>
+        <div class="caixa9">Caixa 9</div>
+    </div>
+
+    <aside>.</aside>
+
+    <h1>Container Número Três :</h1>
+
+    <div class="container-3">
+        <div class="caixa10">Caixa 10</div>
+        <div class="caixa11">Caixa 11</div>
+        <div class="caixa12">Caixa 12</div>
+        <div class="caixa13">Caixa 13</div>
+        <div class="caixa14">Caixa 14</div>
+    </div>
+
+    <aside>.</aside>
+
+    <div class="container-4">
+        <div class="caixa15">Caixa 15</div>
+        <div class="caixa16">Caixa 16</div>
+        <div class="caixa17">Caixa 17</div>
+        <div class="caixa18">Caixa 18</div>
+        <div class="caixa19">Caixa 19</div>
+        <div class="caixa20">Caixa 20</div>
+        <div class="caixa21">Caixa 21</div>
+        <div class="caixa22">Caixa 22</div>
+        <div class="caixa23">Caixa 23</div>
+        <div class="caixa24">Caixa 24</div>
+    </div>
+    
+</body>
+</html>
