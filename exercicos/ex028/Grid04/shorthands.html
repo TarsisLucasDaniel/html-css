@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplificando Grid Itens</title>
+    <style>
+        *{
+            margin: 0px ;
+            padding: 0px;
+        }
+
+        section{
+            background-color: rgb(95, 95, 95);
+            margin-top: 100px;
+            padding: 10px;
+        }
+
+        div.container{
+            display: grid;
+            max-width: 700px;
+            margin-top: 20px;
+            margin: auto;
+            background-color: black;
+            grid-template-rows: repeat(6, 100px);
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
+
+        div.caixa-1{
+            background-color: rgb(163, 163, 163);
+            text-align: center;
+            grid-row-start: 1;
+            grid-row-end:span 2 ;
+            grid-column-start: 1;
+            grid-column-end: span 2;
+        }
+
+        div.caixa-2{
+            background-color: brown;
+            text-align: center;
+            grid-row-start:1 ;
+            grid-row-end: span 2;
+            grid-column-start:3 ;
+            grid-column-end:span 2 ;
+        }
+
+        div.caixa-3{
+            background-color: coral;
+            text-align: center;
+            grid-row-start: 3;
+            grid-row-end: span 2;
+            grid-column-start: 1;
+            grid-column-end:span 4 ;
+        }
+
+        div.caixa-4{
+            background-color: crimson;
+            text-align: center;
+            grid-row-start:5 ;
+            grid-row-end:7 ;
+            grid-column-start:1 ;
+            grid-column-end:3 ;
+        }
+
+        div.caixa-5{
+            background-color: beige;
+            text-align: center;
+            grid-row-start: 5;
+            grid-row-end: 7;
+            grid-column-start:3;
+            grid-column-end:5;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section>
+        <div class="container">
+            <div class="caixa-1">garagem</div>
+            <div class="caixa-2">sala</div>
+            <div class="caixa-3">cozinha</div>
+            <div class="caixa-4">quarto</div>
+            <div class="caixa-5">quarto</div>
+            
+        </div>
+    </section>
+
+    
+</body>
+</html>

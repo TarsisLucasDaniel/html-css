@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1 - Grid Layout</title>
+    <style>
+        div.container{
+            display: grid;
+            grid-template-rows: repeat(7, 100px);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5px;
+            background-color: gray;
+            padding: 10px;
+        }
+
+        div.caixa-topo{
+            background-color: rgb(255, 0, 0);
+            grid-row: 1 / 3;
+            grid-column:1 / 4 ;
+            text-align: center;
+        }
+
+        div.caixa-menu{
+            background-color: rgb(21, 255, 0);
+            grid-row: 3 / 4;
+            grid-column: 1 / 4 ;
+            text-align: center;
+        }
+
+        div.caixa-principal{
+            background-color: rgb(0, 4, 255);
+            grid-row: 4 / 7 ;
+            grid-column: 1 / 3 ;
+            text-align: center;
+        }
+
+        div.caixa-segundario{
+            background-color: beige;
+            grid-row:4 / 7 ;
+            grid-column: 3 / 4;
+            text-align: center;
+        }
+
+        div.caixa-rodape{
+            background-color: rgb(255, 251, 0);
+            grid-row: 7 / 8;
+            grid-column:1 / 4 ;
+            text-align: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa-topo">Topo</div>
+        <div class="caixa-menu">Menu</div>
+        <div class="caixa-principal">Principal</div>
+        <div class="caixa-segundario">Segundario</div>
+        <div class="caixa-rodape">Rodapé</div>
+    </div>
+    
+</body>
+</html>
