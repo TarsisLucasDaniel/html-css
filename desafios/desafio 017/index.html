@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 1 - Grid Layout</title>
+    <link rel="stylesheet" href="style-desafio-prof.css">
     <style>
         div.container{
             display: grid;
@@ -12,6 +13,13 @@
             gap: 5px;
             background-color: gray;
             padding: 10px;
+        }
+
+        h1{
+            color: black;
+            text-align: center;
+            font-size: 2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
 
         div.caixa-topo{
@@ -54,12 +62,38 @@
     </style>
 </head>
 <body>
+    <h1>Desafio Feito da Minha Forma: </h1>
     <div class="container">
         <div class="caixa-topo">Topo</div>
         <div class="caixa-menu">Menu</div>
         <div class="caixa-principal">Principal</div>
         <div class="caixa-segundario">Segundario</div>
         <div class="caixa-rodape">Rodapé</div>
+    </div>
+
+
+    <h1>Desafio Versão Prof:</h1>
+    <div class="container-versao-prof">
+        <header class="caixa" id="topo">
+            Topo
+        </header>
+
+        <nav class="caixa" id="menu">
+            Menu
+        </nav>
+
+        <main class="caixa" id="principal">
+            Principal
+        </main>
+
+        <aside class="caixa" id="secundario">
+            segundario
+        </aside>
+
+        <footer class="caixa" id="rodape">
+            Rodapé
+        </footer>
+
     </div>
     
 </body>
