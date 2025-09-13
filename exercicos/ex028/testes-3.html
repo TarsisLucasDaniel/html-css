@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes Grid-Itens/Grid-Areas</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        div.container{
+            background-color:rgb(63, 63, 63);
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            grid-template: 110px 320px 80px 150px / repeat(2, 1fr);
+        }
+
+        div.itens{
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        div#letra-A{
+            background-color: rgb(58, 58, 58);
+            grid-row: 1 / 2;
+            grid-column: 1 / 3 ;
+        }
+
+        div#letra-A > h1{
+            font-size: 2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            text-shadow: 1px 1px 1px  black;
+            text-align: center;
+        }
+
+        div#letra-A > nav{
+            text-align: center;
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        nav > a{
+            font-size: 1.2em;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav > a:hover{
+            color: rgb(112, 112, 112);
+        }
+
+        div#letra-B{
+            background-color: white;
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+            padding: 10px;
+        }
+
+        div#letra-B > h1{
+            color: rgb(0, 0, 0);
+            margin-bottom: 5px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: normal;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        div#letra-B > div.caixa-imagem{
+            display: flex;
+            padding: 10px;
+            border: 5px solid black;
+            border-radius: 20px;
+            justify-content: space-between;
+        }
+
+        div#letra-B > div.caixa-imagem > p{
+            color: black;
+            line-height: 1.2em;
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        div#letra-B > div.caixa-imagem > img{
+            border-radius: 10px;
+        }
+
+        div#letra-C{
+            background-color: rgb(255, 255, 255);
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+
+        div#letra-C > h1{
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        div#letra-C > p{
+            line-height: 1.5em;
+            font-size: 20px;
+            border: 3px solid rgba(0, 0, 0, 0.651);
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.795) ;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        div#letra-D{
+            background-color: rgb(255, 255, 255);
+            grid-row: 3 / 5;
+            grid-column: 1 / 3;
+        }
+
+        div#letra-D > h1{
+            color: black;
+            font-size: 2.3m;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+
+        div#letra-D > div.caixa-patrocinadores{
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        div.caixa-patrocinadores > p{
+            font-size: 20px;
+            margin-top: 14px;
+            line-height: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        div.caixa-patrocinadores > img{
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens" id="letra-A">
+            <h1>PesquisasMecs</h1>
+            <nav>
+                <a href="">Pesquisas</a>
+                <a href="">Curiosidades</a>
+                <a href="">Análises</a>
+            </nav>
+        </div>
+        <div class="itens" id="letra-B">
+            <h1>Nossa Empresa Mec</h1>
+            <div class="caixa-imagem">
+                <img src="images.jpg" alt="Empresa-Mec">
+                <p>Ministério da Educação do Brasil, o órgão federal responsável pelas políticas educacionais e fiscalização do ensino no país, ou a diferentes empresas privadas que usam "MEC" no nome, como a Mec Telecom (soluções tecnológicas), a Mec-Tronic (tecnologia) e a Mec Máquinas (serviços hidráulicos). </p>
+            </div>
+        </div>
+        <div class="itens" id="letra-C">
+            <h1>O que fazemos ?</h1>
+            <p> O Ministério da Educação (MEC) é um órgão do governo federal brasileiro responsável por formular, coordenar e implementar a política nacional de educação, abrangendo todos os níveis de ensino, desde a educação infantil até o ensino superior e a educação profissional e tecnológica. As suas funções incluem a avaliação e o financiamento da educação, a assistência financeira para famílias carentes, o suporte à formação de professores e o desenvolvimento de programas como o Fies e o Prouni para promover o acesso ao ensino.</p>
+        </div>
+        <div class="itens" id="letra-D">
+            <h1>Nossos Patrocinadores</h1>
+            <div class="caixa-patrocinadores">
+                <img src="images.jpg" alt="">
+                <p>O MEC (Ministério da Educação) tem várias parcerias com outras instituições, não sendo uma empresa que busca patrocinadores no sentido tradicional, mas sim parceiros para projetos e programas. As parcerias incluem colaborações com o Sebrae, a Caixa Econômica Federal, o Banco do Brasil, o Bradesco, e empresas de e-commerce como Amazon, Facebook e Magalu, que apoiam iniciativas de educação empreendedora e inovação. </p>
+
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
